@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.5 on win32)" generated="2024-12-31T19:47:24.047919" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework" source="D:\Automation_Testing\Robotframework">
+<suite id="s1-s1" name="Test1" source="D:\Automation_Testing\Robotframework\Test1">
+<suite id="s1-s1-s1" name="Test1" source="D:\Automation_Testing\Robotframework\Test1\Test1.robot">
+<test id="s1-s1-s1-t1" name="Check Thermal comfort of Meeting room" line="36">
+<kw name="Open view gallery" owner="GalleryPage">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:24.473468" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-12-31T19:47:24.473468" elapsed="1.537134"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-31T19:47:26.011599" elapsed="0.050140"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:26.063111" level="INFO">Opening url 'https://accounts.simulationhub.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-12-31T19:47:26.062112" elapsed="2.032237"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:28.096055" level="INFO">Typing text 'nikita.dhumal@cctech.co.in' into text field 'xpath:(//input[@type='email'])[1]'.</msg>
+<arg>xpath:(//input[@type='email'])[1]</arg>
+<arg>${EmailId}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:28.095057" elapsed="0.095310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:47:29.191089" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:47:28.190367" elapsed="1.000722"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:29.191089" level="INFO">Clicking button 'id:btn_get_user'.</msg>
+<arg>id:btn_get_user</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:29.191089" elapsed="0.067839"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:47:32.262518" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:47:29.258928" elapsed="3.003590"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:32.262518" level="INFO">Typing password into text field 'id:l_password'.</msg>
+<msg time="2024-12-31T19:47:32.288155" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:l_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:32.262518" elapsed="0.044524"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:47:33.307550" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:47:32.307042" elapsed="1.000508"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:33.307550" level="INFO">Clicking button 'id:btn_login_reg'.</msg>
+<arg>id:btn_login_reg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:33.307550" elapsed="0.059674"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:47:43.367606" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:47:33.367224" elapsed="10.000382"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:43.367606" level="INFO">Clicking element '(//div[@class='ui dropdown item'])[2]'.</msg>
+<arg>(//div[@class='ui dropdown item'])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:43.367606" elapsed="0.054615"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>(//a[text()='Simulation gallery'])[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-31T19:47:43.422221" elapsed="0.240132"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:43.662353" level="INFO">Clicking element '(//a[text()='Simulation gallery'])[2]'.</msg>
+<arg>(//a[text()='Simulation gallery'])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:43.662353" elapsed="3.957472"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:47:57.621159" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:47:47.619825" elapsed="10.001334"/>
+</kw>
+<arg>${LoginURL}</arg>
+<arg>${ValidEmailId}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2024-12-31T19:47:24.473468" elapsed="33.147691"/>
+</kw>
+<kw name="Access CCTECH office project" owner="GalleryPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>(//i[@class='fa fa-angle-right'])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-31T19:47:57.628789" elapsed="0.014278"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:47:57.644096" level="INFO">Clicking element '(//i[@class='fa fa-angle-right'])[1]'.</msg>
+<arg>(//i[@class='fa fa-angle-right'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:47:57.644096" elapsed="1.260070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:48:08.906046" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:47:58.905163" elapsed="10.000883"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//span[text()='CCTech Office Pune']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-31T19:48:08.906046" elapsed="0.290387"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:48:14.196971" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:48:09.196433" elapsed="5.000538"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:48:14.196971" level="INFO">Clicking element '(//span[text()='Open Results'])[11]'.</msg>
+<arg>(//span[text()='Open Results'])[11]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T19:48:14.196971" elapsed="0.049993"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-31T19:48:29.247888" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-31T19:48:14.246964" elapsed="15.000924"/>
+</kw>
+<status status="PASS" start="2024-12-31T19:47:57.621159" elapsed="31.626729"/>
+</kw>
+<kw name="Open Meeting room" owner="GalleryPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-12-31T19:48:39.812380" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-31T19:48:39.818900" level="FAIL">Element '//div[text()='Square Plaque Design']' not visible after 5 seconds.</msg>
+<arg>//div[text()='Square Plaque Design']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-12-31T19:48:29.249912" elapsed="10.573036">Element '//div[text()='Square Plaque Design']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[text()='Square Plaque Design']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-31T19:48:39.822948" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-12-31T19:48:39.822948" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[text()='Cooling']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-31T19:48:39.822948" elapsed="0.005628"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-12-31T19:48:39.828576" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[text()='Meeting Room']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-31T19:48:39.829361" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-12-31T19:48:39.829361" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-12-31T19:48:29.248885" elapsed="10.582076">Element '//div[text()='Square Plaque Design']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Check Thermal comfort" owner="GalleryPage">
+<status status="NOT RUN" start="2024-12-31T19:48:39.832998" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-31T19:48:39.832998" elapsed="2.455666"/>
+</kw>
+<status status="FAIL" start="2024-12-31T19:47:24.473468" elapsed="77.815196">Element '//div[text()='Square Plaque Design']' not visible after 5 seconds.</status>
+</test>
+<doc>SimulationHub website automation</doc>
+<status status="FAIL" start="2024-12-31T19:47:24.116592" elapsed="78.172072"/>
+</suite>
+<status status="FAIL" start="2024-12-31T19:47:24.106589" elapsed="78.182075"/>
+</suite>
+<status status="FAIL" start="2024-12-31T19:47:24.063632" elapsed="78.225032"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test1">Robotframework.Test1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test1">Robotframework.Test1.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
